@@ -8,6 +8,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container"></div>
+  <div class="container">
+    <div class="left">
+      <div class="title">
+        <img src="assets/odin-lined.png" alt="Odin Logo">
+        <p>ODIN</p>
+      </div>
+      <img src="assets/leaf.jpg" alt="Leaf Background">
+    </div>
+    <div class="right">
+      <div class="right-header">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started <br><br>You know you want to</div>
+      <form>
+        <p class="form-header">Let's do this!</p>
+
+        <div class="input-wrapper">
+          <div class="input">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" required></div>
+          <div class="input">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" required></div>
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" id="email" required></div>
+          <div class="input"
+          ><label for="phonenumber">Phone Number</label>
+          <input type="text" id="phonenumber" required></div>
+          <div class="input">
+            <label for="password">Password</label>
+            <input type="password" id="password" required class="error"></div>
+          <div class="input">
+            <label for="confirmpass">Confirm Password</label>
+            <input type="password" id="confirmpass" required class="error"></div>
+        </div>
+      </form>
+      <button>Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+  </div>
 </body>
 </html>
