@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@
 
 body {
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -59,18 +61,14 @@ body {
 
 .right-header {
   padding-top: 150px;
-  font-size: 2rem;
+  font-size: 1.35rem;
   font-weight: 500;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
   padding-left: 50px;
   padding-top: 50px;
 }
 
-form {
-  background-color: white;
-  height: 375px;
-  padding: 25px;
-}
+
 
 form .input {
   display: flex;
@@ -78,14 +76,20 @@ form .input {
 }
 
 .input-wrapper {
+  background-color: white;
+  height: 400px;
+  padding: 25px 25px 25px 50px;
   display: grid;
   grid-template-columns: repeat(2, 350px);
-  gap: 32px;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 25px;
 }
 
 .form-header {
   font-size: 1.75rem;
-  margin-bottom: 15px;
+  background-color: white;
+  padding-left: 50px;
+  padding-top: 15px;
 }
 
 .input label {
@@ -108,10 +112,39 @@ form .input {
   box-shadow: 10px 10px 5px -8px rgba(173,216,230,0.64);
 }
 
-.input .error {
+input.error {
   border: 1px solid red;
   outline: none;
   -webkit-box-shadow: 10px 10px 5px -12px rgba(255,0,0,1);
   -moz-box-shadow: 10px 10px 5px -12px rgba(255,0,0,1);
   box-shadow: 10px 10px 5px -12px rgba(255,0,0,1);
+}
+
+.error {
+  padding-top: 15px;
+  color: red;
+}
+
+
+.submit {
+  background-color: #596D48;
+  outline: none;
+  border: none;
+  width: 250px;
+  padding: 15px;
+  margin-top: 15px;
+  margin-left: 50px;
+  border-radius: 15px;
+  color: #F9FAFB;
+  font-size: 1.25rem;
+}
+
+.login {
+  margin-left: 50px;
+  font-size: 1.5rem;
+}
+
+.login a {
+  text-decoration: none;
+  color: #596D48;
 }
