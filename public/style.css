@@ -120,8 +120,7 @@ input.error {
   box-shadow: 10px 10px 5px -12px rgba(255,0,0,1);
 }
 
-.error {
-  padding-top: 15px;
+div.error {
   color: red;
 }
 
