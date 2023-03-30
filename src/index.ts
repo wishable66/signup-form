@@ -23,4 +23,11 @@ form.addEventListener('change', (e: Event) => {
       )})`
     );
   }
+
+  if (validity.patternMismatch) {
+    updateError(
+      errorDiv,
+      `* Please input your phone number correctly. Example: 123-456-7890`
+    );
+  }
 });
