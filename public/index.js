@@ -9,13 +9,15 @@ form.addEventListener('change', (e) => {
     const inputValue = target.value;
     const errorDiv = target.nextElementSibling;
     const validity = target.validity;
-    console.log(validity);
     if (validity.valid)
         return updateError(errorDiv, '');
     if (validity.tooShort) {
         updateError(errorDiv, `* ${inputType} is too short! (${inputValue.length.toString()}/${target.getAttribute('minlength')})`);
     }
     if (validity.patternMismatch) {
-        updateError(errorDiv, `* Please input your phone number correctly. Example: 123-456-7890`);
+        updateError(errorDiv, `* Invalid phone number. Example: 123-456-7890`);
+    }
+    if (validity.typeMismatch) {
+        updateError(errorDiv, `* Invalid email address.`);
     }
 });

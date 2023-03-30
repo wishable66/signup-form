@@ -25,9 +25,10 @@ form.addEventListener('change', (e: Event) => {
   }
 
   if (validity.patternMismatch) {
-    updateError(
-      errorDiv,
-      `* Please input your phone number correctly. Example: 123-456-7890`
-    );
+    updateError(errorDiv, `* Invalid phone number. Example: 123-456-7890`);
+  }
+
+  if (validity.typeMismatch) {
+    updateError(errorDiv, `* Invalid email address.`);
   }
 });
