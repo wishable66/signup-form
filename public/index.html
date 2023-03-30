@@ -19,42 +19,42 @@
     </div>
     <div class="right">
       <div class="right-header">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up now to get started <br><br>You know you want to</div>
-      <form>
+      <form action="https://httpbin.org/post" method="post" id="login-form">
         <p class="form-header">Let's do this!</p>
         <div class="input-wrapper">
           <div class="input">
             <label for="firstname">First Name</label>
-            <input type="text" id="firstname" required>
+            <input type="text" id="firstname" name="firstname" required>
             <div class="error"></div>
           </div>
           <div class="input">
             <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" required>
+            <input type="text" id="lastname" name="lastname" required>
             <div class="error"></div>
           </div>
           <div class="input">
             <label for="email">Email</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email" required>
             <div class="error"></div>
           </div>
           <div class="input">
             <label for="phonenumber">Phone Number</label>
-            <input type="tel" id="phonenumber" required minlength="10" maxlength="12" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            <input type="tel" id="phonenumber" name="phonenumber" required minlength="10" maxlength="12" pattern="\d{3}[\-]\d{3}[\-]\d{4}" >
             <div class="error"></div>
           </div>
           <div class="input">
             <label for="password">Password</label>
-            <input type="password" id="password" required class="" minlength="8" maxlength="28">
+            <input type="password" id="password" name="password" required class="" minlength="8" maxlength="28" >
             <div class="error"></div>
           </div>
           <div class="input">
             <label for="confirmpass">Confirm Password</label>
-            <input type="password" id="confirmpass" required class="" minlength="8" maxlength="28">
+            <input type="password" id="confirmpass" name="confirmpass" required class="" minlength="8" maxlength="28">
             <div class="error"></div>
           </div>
         </div>
 
-        <button type="submit" class="submit">Create Account</button>
+        <button type="submit" class="submit" form="login-form">Create Account</button>
       </form>
       <p class="login">Already have an account? <a href="#">Log in</a></p>
     </div>

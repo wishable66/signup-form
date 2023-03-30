@@ -14,9 +14,8 @@ function validatePassword() {
         return false;
     }
 }
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-});
+// TODO: Prevent field from submitting if password and confirm password aren't equal
+form.addEventListener('submit', (e) => !validatePassword() ? e.preventDefault() : true);
 form.addEventListener('change', (e) => {
     const confirmPassEl = (document.querySelector('#confirmpass').nextElementSibling);
     const target = e.target;
